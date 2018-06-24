@@ -130,6 +130,9 @@ public class Editor extends Fragment {
 
         final EditText et = (EditText)getView().findViewById(R.id.editorText);
         et.setEnabled(true);
+
+        /* Disable editing functionality
+
         et.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -138,6 +141,7 @@ public class Editor extends Fragment {
                 return false;
             }
         });
+        */
 
         if (!ctx.dbIsOpen() || key < 0)
             return;

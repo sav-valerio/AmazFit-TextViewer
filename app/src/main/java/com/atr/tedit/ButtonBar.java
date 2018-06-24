@@ -70,16 +70,16 @@ public class ButtonBar {
     private final int barHeight;
 
     private final Button button_dir_parent;
-    private final Button button_dirdoc;
-    private final Button button_dir;
+    //private final Button button_dirdoc;
+    //private final Button button_dir;
     private final Button button_dirtabs;
     private final Button button_dirhelp;
     private final Button button_dirclose;
 
     private final Button button_doc;
     private final Button button_open;
-    private final Button button_save;
-    private final Button button_save_as;
+    //private final Button button_save;
+    //private final Button button_save_as;
     private final Button button_tabs;
     private final Button button_help;
     private final Button button_close;
@@ -137,7 +137,7 @@ public class ButtonBar {
                 ctx.upDir();
             }
         });
-
+/*
         button_dirdoc = new Button(ctx);
         button_dirdoc.setBackgroundResource(R.drawable.button_doc);
         button_dirdoc.setWidth(bWidth);
@@ -189,7 +189,7 @@ public class ButtonBar {
                 newDir.show(ctx.getSupportFragmentManager(), "NewDirectory");
             }
         });
-
+*/
         button_dirtabs = new Button(ctx);
         button_dirtabs.setBackgroundResource(R.drawable.button_tabs);
         button_dirtabs.setWidth(bWidth);
@@ -312,6 +312,8 @@ public class ButtonBar {
             }
         });
 
+        /*
+
         button_save = new Button(ctx);
         button_save.setBackgroundResource(R.drawable.button_save);
         button_save.setWidth(bWidth);
@@ -359,7 +361,7 @@ public class ButtonBar {
                 ctx.saveAsDocument(false);
             }
         });
-
+ */
         button_tabs = new Button(ctx);
         button_tabs.setBackgroundResource(R.drawable.button_tabs);
         button_tabs.setWidth(bWidth);
@@ -567,13 +569,13 @@ public class ButtonBar {
         if (state == STATE_INIT) {
             bar.addView(button_dir_parent);
             activeButtons.add(button_dir_parent);
-
+/*
             bar.addView(button_dirdoc);
             activeButtons.add(button_dirdoc);
 
             bar.addView(button_dir);
             activeButtons.add(button_dir);
-
+*/
             bar.addView(button_dirtabs);
             activeButtons.add(button_dirtabs);
 
@@ -606,6 +608,7 @@ public class ButtonBar {
                         //.setInterpolator(new OvershootInterpolator());
                 animIn(button_dir_parent);
 
+                  /*
                 button_dirdoc.setScaleX(SCALE);
                 button_dirdoc.setScaleY(SCALE);
                 button_dirdoc.setAlpha(0);
@@ -615,6 +618,7 @@ public class ButtonBar {
                         //.setInterpolator(new OvershootInterpolator());
                 animIn(button_dirdoc);
 
+
                 button_dir.setScaleX(SCALE);
                 button_dir.setScaleY(SCALE);
                 button_dir.setAlpha(0);
@@ -623,7 +627,7 @@ public class ButtonBar {
                 //button_dir.animate().alpha(1).scaleX(1).scaleY(1).setDuration(ANIMLENGTH)
                         //.setInterpolator(new OvershootInterpolator());
                 animIn(button_dir);
-
+*/
                 button_dirtabs.setScaleX(SCALE);
                 button_dirtabs.setScaleY(SCALE);
                 button_dirtabs.setAlpha(0);
@@ -679,6 +683,7 @@ public class ButtonBar {
             bar.addView(button_open);
             activeButtons.add(button_open);
 
+            /*
             bar.addView(button_save);
             activeButtons.add(button_save);
 
@@ -687,6 +692,7 @@ public class ButtonBar {
                 bar.addView(button_save_as);
                 activeButtons.add(button_save_as);
             }
+            */
 
             if (button_tabs.getTranslationX() + bWidth + margin <=
                     button_close.getTranslationX()) {
@@ -733,6 +739,7 @@ public class ButtonBar {
                         //.setInterpolator(new OvershootInterpolator());
                 animIn(button_open);
 
+                /*
                 button_save.setScaleX(SCALE);
                 button_save.setScaleY(SCALE);
                 button_save.setAlpha(0);
@@ -753,7 +760,7 @@ public class ButtonBar {
                             //.setInterpolator(new OvershootInterpolator());
                     animIn(button_save_as);
                 }
-
+*/
                 if (button_tabs.getTranslationX() + bWidth + margin <=
                         button_close.getTranslationX()) {
                     button_tabs.setScaleX(SCALE);

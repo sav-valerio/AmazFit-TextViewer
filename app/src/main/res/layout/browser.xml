@@ -14,7 +14,7 @@
         android:paddingLeft="3dp"
         android:paddingRight="3dp"
         android:paddingTop="5dp">
-        
+
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -29,7 +29,8 @@
             android:maxLines="1"
             android:scrollbars="none"
             android:textColor="@color/browseText"
-            android:textSize="18sp" />
+            android:textSize="12sp"
+            android:paddingLeft="18dp"/>
         </HorizontalScrollView>
 
     </LinearLayout>
@@ -42,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="15sp"
+            android:textSize="12sp"
             android:text="@string/empty_dir"
             android:textColor="@color/browseText"/>
 

@@ -102,7 +102,9 @@ public class Browser extends ListFragment {
     protected static Browser newInstance(String directory) {
         Bundle bundle = new Bundle();
         bundle.putInt("TEditBrowser.type", TYPE_OPEN);
-        bundle.putString("TEditBrowser.currentDir", directory);
+        //bundle.putString("TEditBrowser.currentDir", directory);
+        /* Downloads folder hardcoded */
+        bundle.putString("TEditBrowser.currentDir", "/storage/emulated/0/Download");
 
         Browser browser = new Browser();
         browser.setArguments(bundle);
