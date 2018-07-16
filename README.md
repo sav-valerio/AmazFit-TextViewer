@@ -1,17 +1,11 @@
-TEdit
+AmazFit-TextViewer
 ==================
 
-TEdit is a simple text editor for Android devices. TEdit includes a graphical file browser to make locating existing files and saving new files easy. Additionally TEdit enables you to keep multiple files open simultaneously, simply select the file tabs icon to be presented with a list of currently open documents.
+This application is a simple text viewer for Huami's WOS2
 
-[<img src="https://f-droid.org/badge/get-it-on.png"
-      alt="Get it on F-Droid"
-      height="80">](https://f-droid.org/packages/com.atr.tedit/)
-      
-[<img 
-src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"
- alt="Get it on Google Play" height="80">](https://play.google.com/store/apps/details?id=com.atr.tedit)
+It is a simple fork of [TEdit](https://github.com/ATryder/TEdit), with some layout modifications and text editing functionalities disabled.
 
-You can find various APK installers for TEdit at http://1337atr.weebly.com/tedit.html
+Works fine on an Huami Amazfit Pace, should also work with the Stratos model.
 
 [<img 
 src="http://i.creativecommons.org/p/zero/1.0/88x31.png"
